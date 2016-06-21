@@ -1,0 +1,310 @@
+@CHARSET "UTF-8";
+body { /*设置总体样式*/
+	font-size:13px; 
+	background:#fff; 
+	color:#333; 
+	line-height:25px; 
+	margin:0; 
+	padding:10px 0; 
+	font-family:微软雅黑; 
+	}
+h2,h4,p,ul,li,dl,dt,dd,form,input {/*清除各边界*/
+	margin:0;
+	padding:0; 
+}
+li{
+	background-color:expression((this.sectionRowIndex%2==0)?"red":"blue")
+}
+a:link, a:visited { /*设置超链接状态*/
+	color:#5599ff; 
+	text-decoration:none; 
+}
+a:hover, a:active { 
+	text-decoration:underline; 
+}
+/*主页的*/
+.input-text { /*设置文本框*/
+	padding:2px 4px; 
+	border:1px solid #5599ff; 
+}
+.input-button { /*设置按钮*/
+
+}
+.wrap { 
+	width:800px; 
+	margin:0px auto; 
+}
+.logo{/*logo的css*/
+    height:10px;
+	width:800px;/*设置这个div的宽度*/
+}
+
+#daohang { /*导航的css*/
+	background:#ccd9ea; /*设置背景颜色*/
+    border-top:4px solid #99d9ea; /*设置上边缘颜色，4像素*/
+    line-height:30px; 
+    height:30px; 
+
+}
+
+#daohang .profile { 
+	width:800px;
+	padding:0px 10px;
+}
+#daohang .profile .return a { 
+	margin:0px 50px; 
+	background:url(../images/new.gif) left center no-repeat; 
+	padding-left:18px; 
+}
+#daohang .profile .addnew a { 
+	margin:0px 50px; 
+	background:url(../images/addnew.gif) left center no-repeat; 
+	padding-left:18px; 
+}
+#daohang .profile .modify a { 
+	margin:0px 50px;
+    background:url(../images/edit.gif) left center no-repeat; 
+    padding-left:18px; 
+}
+#daohang .profile .user a { 
+	margin:0px 50px;
+    background:url(../images/edit.gif) left center no-repeat; 
+    padding-left:18px; 
+}
+#vote h2 { 
+	color:#333; 
+	font-size:16px; 
+	background:url(../images/title_ico.gif) 5px  no-repeat; 
+	line-height:30px; 
+	padding-left:50px; 
+}
+#vote .search { 
+		margin-top:10px; 
+}
+.input-button {
+	vertical-align:middle;
+	border:1px solid #5599ff;
+	background:#ccd9ea;
+	color:#333;
+}
+#vote .search .input-text { 
+	vertical-align:middle;
+}
+#vote .search .search-input { 
+	float:right;
+	vertical-align:middle;
+}
+
+
+#menu{
+	
+}
+
+#vote .list { /*设置列表*/
+	margin-top:10px; 
+	list-style:none; 
+}
+#vote .list li { /*设置列表分隔线*/
+	border-top:1px solid #79a4cf; 
+	padding:10px; 
+}
+#vote .list li h4 { /*设置列表标题*/
+	font-size:14px; 
+	color:#5599ff;
+	background:url(../images/vote_icon.gif) left  no-repeat; 
+	padding-left:20px; 
+}
+#vote .list li .join { /*设置列表参与*/
+	float:right; 
+}
+#vote .list li .join a { /*设置列表参与连接*/
+	display:block;
+	background:url(../images/join.gif) left center no-repeat; 
+	padding-left:18px; 
+}
+#vote .list li .info { 
+	color:#666; 
+	margin-left:20px;  
+}
+#vote .page .gopage{
+	float:right;
+}
+/*投票结果的*/
+#vote .list li ol li { 
+	border:none; 
+}
+#vote .list li ol li .rate { 
+	line-height:14px; 
+	}
+#vote .list li ol li .rate .ratebg { 
+	float:left; 
+	width:500px; 
+	background:#eee; 
+	}
+#vote .list li ol li .rate .percent { 
+	border:1px solid #5599ff; 
+	background:#99d9ea; 
+	height:12px; 
+	overflow:hidden; 
+	}
+#vote .list li ol li .rate p { 
+	margin-left:510px; 
+	}
+#vote .list li ol li .rate p span { 
+	margin-left:10px; 
+	color:#79a4cf; 
+	}
+.goback { 
+	margin:20px auto; 
+	font-size:14px; 
+	line-height:30px; 
+	}
+.goback a { 
+	display:block; 
+	padding-left:50px; 
+	background:url(../images/goback.gif) left center no-repeat; 
+	float:left; 
+	clear:right; 
+	}
+	
+	/*添加投票的*/
+.box { 
+	width:800px;
+	border:2px solid #5599ff; 
+	}
+.box h2 { 
+	background:#ccd9ea; 
+	line-height:35px; 
+	font-size:14px; 
+	padding:0 10px; 
+	color:#666; 
+	}
+.box .content { 
+	font-size:14px; 
+	padding:20px 40px; 
+	}
+#voteManage { 
+	width:600px; 
+	margin:20px auto; 
+	}
+#voteManage dl { 
+	line-height:40px; 
+	}
+#voteManage dl dt { 
+	float:left; 
+	clear:left; 
+	width:80px; 
+	text-align:right; 
+	}
+#voteManage dl dd { 
+	margin-left:80px; 
+	}
+#voteManage dl dd input { 
+	font-size:14px; 
+	margin:8px 0; 
+	vertical-align:middle; 
+	}
+#voteManage dl dd .input-text { 
+	width:380px; 
+	}
+#voteManage dl dd .del { 
+	font-size:12px; 
+	margin:0px 5px; 
+	}
+#voteManage dl dd.button img { 
+	vertical-align:middle; 
+	}
+#voteManage dl dd.button a { 
+	margin:0px 10px; 
+	}
+	/*注册的*/
+#register { 
+	width:600px; 
+	margin:20px auto; 
+	}
+#register dl { 
+	line-height:40px; 
+	}
+#register dl dt { 
+	float:left; 
+	clear:left; 
+	width:80px; 
+	text-align:right; 
+	}
+#register dl dd { 
+	margin-left:80px; 
+	}
+#register dl dd input { 
+	margin:8px 0; 
+	font-size:14px; 
+	}
+#footer { /*设置底部*/
+	border-top:1px solid #79a4cf; 
+	margin-top:30px; 
+	text-align:center; 
+	line-height:30px; 
+	color:#5599ff;
+}
+.blank{
+	width:800px;
+	height:100px;
+}
+.main{
+
+	height:200px;
+}
+.corner{
+	font-size:22px;
+	color:#ffffff;
+	float:left;
+	width:350px;
+	height: 150px;
+	background:url(../images/login.jpg) left center no-repeat;
+	border-left:50px solid #ffffff; 
+	text-align:center;
+	line-height:150px;
+}
+.login{
+	width:300px;
+	height: 150px;
+	float:right;
+}
+#none{
+	height:250px;
+	text-align:center;/*div内字体水平居中*/
+	line-height:250px;
+	font-size:24px;
+}
+.error{
+	height:14px;
+	line-height:14px;
+	color:red;
+
+}
+.lerror{
+	height:20px;
+	line-height:20px;
+	color:red;
+
+}
+.luser{
+	float:left;
+	width:70px;
+}
+.usertext{
+	width:180px;
+	float:left;
+}
+#mydiv{
+	 display: none;
+	 margin-left:80px;
+	 color:red;
+	 font-size:12px;
+}
+#top{
+	font-size:12px;
+	color:#5599ff;
+	width:800px; 
+	margin: auto; 
+	height:20px;
+}
